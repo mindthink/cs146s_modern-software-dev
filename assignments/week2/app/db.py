@@ -104,7 +104,11 @@ def list_action_items(note_id: Optional[int] = None) -> list[sqlite3.Row]:
         return list(cursor.fetchall())
 
 
-def mark_action_item_done(action_item_id: int, done: bool) -> None:
+def mark_action_item_done(action_item_id: int, done: bool) -> bool:
+    """Mark an action item done/undone.
+
+    Returns True if a row was updated. Refactor (TODO 3): callers can map False → 404.
+    """
     with get_connection() as connection:
         cursor = connection.cursor()
         cursor.execute(
@@ -112,5 +116,6 @@ def mark_action_item_done(action_item_id: int, done: bool) -> None:
             (1 if done else 0, action_item_id),
         )
         connection.commit()
+        return cursor.rowcount > 0
 
 

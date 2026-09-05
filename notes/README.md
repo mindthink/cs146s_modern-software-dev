@@ -8,6 +8,7 @@
 |------|------|
 | [00-course-index.md](./00-course-index.md) | 课程导读摘要 + 十周大纲索引（基于知乎专栏） |
 | [week01-prompting.md](./week01-prompting.md) | Week 1：提示工程练习笔记 |
+| [week02-action-items.md](./week02-action-items.md) | Week 2：Action Item Extractor |
 | [reading-list.md](./reading-list.md) | 阅读材料与扩展教程 |
 
 ## 主要参考
