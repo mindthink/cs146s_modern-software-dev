@@ -20,7 +20,7 @@ This assignment was completed for personal learning (not for Gradescope).
 For each exercise, please include what prompts you used to generate the answer, in addition to the location of the generated response. Make sure to clearly add comments in your code documenting which parts are generated.
 
 ### Exercise 1: Scaffold a New Feature
-Prompt: 
+Prompt:
 ```
 In assignments/week2/app/services/extract.py, add extract_action_items_llm(text, model=None) that uses the local Ollama Python client to extract action items from free-form notes.
 
@@ -32,7 +32,7 @@ Requirements:
 - Clean bullet/checkbox prefixes and dedupe case-insensitively (reuse shared helper if useful)
 - Model name from OLLAMA_MODEL env var with a small local default
 - Add brief comments marking the LLM-powered section
-``` 
+```
 
 Generated Code Snippets:
 ```
@@ -43,7 +43,7 @@ assignments/week2/app/services/extract.py
 ```
 
 ### Exercise 2: Add Unit Tests
-Prompt: 
+Prompt:
 ```
 Add unit tests for extract_action_items_llm in assignments/week2/tests/test_extract.py.
 
@@ -60,7 +60,7 @@ Cover:
 
 Mock ollama.chat with monkeypatch so tests are fast and do not need a running Ollama server.
 Optional: one opt-in live test gated by RUN_OLLAMA_TESTS=1.
-``` 
+```
 
 Generated Code Snippets:
 ```
@@ -82,7 +82,7 @@ assignments/week2/tests/test_extract.py
 ```
 
 ### Exercise 3: Refactor Existing Code for Clarity
-Prompt: 
+Prompt:
 ```
 Refactor the Week 2 FastAPI backend for clarity. Do NOT change product behavior.
 
@@ -97,7 +97,7 @@ Constraints:
 - Keep existing routes working for the current frontend Extract flow.
 - Keep extract_action_items / extract_action_items_llm behavior unchanged.
 - After changes, summarize touched files + line ranges for writeup.md Exercise 3.
-``` 
+```
 
 Generated/Modified Code Snippets:
 ```
@@ -122,7 +122,7 @@ assignments/week2/app/db.py
 
 
 ### Exercise 4: Use Agentic Mode to Automate a Small Task
-Prompt: 
+Prompt:
 ```
 TODO 4 for Week 2 Action Item Extractor:
 
@@ -132,7 +132,7 @@ TODO 4 for Week 2 Action Item Extractor:
 3. Update frontend/index.html: add "Extract LLM" and "List Notes" buttons wired to those
    endpoints; keep existing Extract + checkbox done behavior.
 4. Mark TODO 4 changes with brief comments. Summarize files/lines for writeup.md.
-``` 
+```
 
 Generated Code Snippets:
 ```
@@ -150,7 +150,7 @@ assignments/week2/frontend/index.html
 
 
 ### Exercise 5: Generate a README from the Codebase
-Prompt: 
+Prompt:
 ```
 Analyze the Week 2 Action Item Extractor under assignments/week2/ and generate a
 clear README.md that includes at least:
@@ -161,7 +161,7 @@ clear README.md that includes at least:
 - short project layout
 
 Keep it accurate to the current code (Pydantic schemas, lifespan DB init, frontend buttons).
-``` 
+```
 
 Generated Code Snippets:
 ```
@@ -174,6 +174,6 @@ assignments/week2/README.md (new)
 
 
 ## SUBMISSION INSTRUCTIONS
-1. Hit a `Command (⌘) + F` (or `Ctrl + F`) to find any remaining `TODO`s in this file. If no results are found, congratulations – you've completed all required fields. 
+1. Hit a `Command (⌘) + F` (or `Ctrl + F`) to find any remaining `TODO`s in this file. If no results are found, congratulations – you've completed all required fields.
 2. Make sure you have all changes pushed to your remote repository for grading.
-3. Submit via Gradescope. 
+3. Submit via Gradescope.

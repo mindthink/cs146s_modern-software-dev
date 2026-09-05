@@ -31,4 +31,3 @@ Status: completed for self-study Week 4 (see `writeup.md`, `docs/API.md`).
 ## 7) Docs drift check (manual for now)
 - [x] `docs/API.md` aligned with OpenAPI
 - Automation: `.claude/commands/week4-docs-sync.md`
-

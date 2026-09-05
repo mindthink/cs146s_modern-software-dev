@@ -1,6 +1,6 @@
 # CS146S 课程导读摘要
 
-> 整理自：[The Modern Software Developer：CS146S 课程导读与实战索引](https://zhuanlan.zhihu.com/p/1985789368133261187)  
+> 整理自：[The Modern Software Developer：CS146S 课程导读与实战索引](https://zhuanlan.zhihu.com/p/1985789368133261187)
 > 官网：[themodernsoftware.dev](https://themodernsoftware.dev)
 
 ## 课程在教什么

@@ -10,7 +10,7 @@
 
 ## 提示工程
 
-- [提示工程指南（中文）](https://www.promptingguide.ai/zh) — DAIR.AI 的 Prompt Engineering Guide  
+- [提示工程指南（中文）](https://www.promptingguide.ai/zh) — DAIR.AI 的 Prompt Engineering Guide
   覆盖零样本/少样本、CoT、Self-Consistency、RAG、ReAct、Reflexion、Tool/Function Calling 等，和 Week 1 Prompting Playground 高度对应，做题时适合对照查概念。
 
 ## 扩展教程
@@ -34,4 +34,3 @@
 | Ch9 | GUI 智能体 |
 | Ch10 | 智能体安全 |
 | Ch11 | RLHF 安全对齐 |
-

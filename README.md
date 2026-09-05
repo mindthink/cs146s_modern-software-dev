@@ -21,7 +21,7 @@
 
 ## 导读与大纲
 
-中文课程导读（大纲索引）：  
+中文课程导读（大纲索引）：
 [The Modern Software Developer：CS146S 课程导读与实战索引](https://zhuanlan.zhihu.com/p/1985789368133261187)
 
 课程官网：https://themodernsoftware.dev
