@@ -6,6 +6,8 @@
 
 ```text
 .
+├── AGENTS.md      # 跨工具 Agent 约定（提交规范等）
+├── CLAUDE.md      # Claude Code 入口，引用 AGENTS.md
 ├── assignments/   # 官方作业与代码（week1–week8）
 ├── notes/         # 学习笔记、大纲索引、个人总结
 ├── pyproject.toml # Poetry 依赖

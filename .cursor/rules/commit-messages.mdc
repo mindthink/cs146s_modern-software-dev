@@ -1,46 +1,10 @@
 ---
-description: Git commit message must follow Conventional Commits
+description: Defer to root AGENTS.md for shared agent conventions
 alwaysApply: true
 ---
 
-# Commit Message Convention
+# Shared agent instructions
 
-When creating git commits in this repo, follow [Conventional Commits](https://www.conventionalcommits.org/):
+Follow the repository root [`AGENTS.md`](../../AGENTS.md) for commit messages and project conventions.
 
-```text
-<type>(optional-scope): <description>
-
-[optional body]
-```
-
-## Rules
-
-- Use imperative mood, lowercase description (no trailing period required on subject)
-- Subject line ≤ 72 characters when practical
-- Do **not** add `Co-authored-by: Cursor` or any Cursor attribution trailers
-- Prefer a short body only when the why is not obvious from the subject
-
-## Types
-
-| type | when |
-|------|------|
-| `feat` | new feature / completed assignment prompt |
-| `fix` | bug fix |
-| `docs` | README, notes, reading list |
-| `refactor` | restructure without behavior change |
-| `chore` | tooling, deps, config |
-| `test` | add or update tests |
-| `style` | formatting only |
-
-## Scopes (optional)
-
-`week1`, `week2`, … `notes`, `repo`
-
-## Examples
-
-```text
-feat(week1): add chain-of-thought system prompt
-docs(notes): add prompting guide to reading list
-refactor(repo): move homework under assignments/
-chore: configure in-project poetry venv
-```
+Do not duplicate rules here; `AGENTS.md` is the source of truth for Cursor, Claude Code (via `CLAUDE.md`), and other agents.
