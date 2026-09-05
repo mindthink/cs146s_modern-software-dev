@@ -1,0 +1,14 @@
+---
+description: Week 4 starter app conventions (FastAPI notes/actions playground)
+globs: assignments/week4/**
+alwaysApply: false
+---
+
+# Week 4 starter
+
+When editing `assignments/week4/**`, follow `assignments/week4/CLAUDE.md`.
+
+- Run commands from `assignments/week4/` with `PYTHONPATH=.` (see Makefile).
+- Endpoint changes: failing test → implement → `make test` → `make lint`.
+- Keep `docs/API.md` aligned with OpenAPI after route changes.
+- Prefer slash workflows documented in `.claude/commands/week4-tests.md` and `week4-docs-sync.md`.
