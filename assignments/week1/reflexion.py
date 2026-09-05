@@ -102,7 +102,7 @@ def your_build_reflexion_context(prev_code: str, failures: List[str]) -> str:
 
     Return a string that will be sent as the user content alongside the reflexion system prompt.
     """
-    return ""
+    return prev_code + "\n" + "\n".join(failures)
 
 
 def apply_reflexion(
