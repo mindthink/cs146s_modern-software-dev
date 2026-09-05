@@ -15,8 +15,14 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = ""
-
+YOUR_REFLEXION_PROMPT = """
+You revise a failed password validator.
+Use the previous code and the listed test failures.
+Fix only what the failures require.
+Improve the function by adding more checks.
+Output ONE fenced Python code block defining is_valid_password(password: str) -> bool.
+No prose.
+"""
 
 # Ground-truth test suite used to evaluate generated code
 SPECIALS = set("!@#$%^&*()-_")

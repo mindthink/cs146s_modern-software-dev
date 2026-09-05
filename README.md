@@ -24,6 +24,12 @@
 
 课程官网：https://themodernsoftware.dev
 
+扩展阅读：
+- [提示工程指南（中文）](https://www.promptingguide.ai/zh)
+- [动手学大模型 Dive into LLMs](https://github.com/Lordog/dive-into-llms/tree/main)
+
+详见 [`notes/reading-list.md`](./notes/reading-list.md)。
+
 ## 能力递进（五段）
 
 1. **Week 1–2**：提示工程 → Coding Agent / MCP（先把 AI 闭环跑起来）

@@ -8,8 +8,11 @@
 |------|------|
 | [00-course-index.md](./00-course-index.md) | 课程导读摘要 + 十周大纲索引（基于知乎专栏） |
 | [week01-prompting.md](./week01-prompting.md) | Week 1：提示工程练习笔记 |
+| [reading-list.md](./reading-list.md) | 阅读材料与扩展教程 |
 
 ## 主要参考
 
 - 专栏导读：[CS146S 课程导读与实战索引](https://zhuanlan.zhihu.com/p/1985789368133261187)
 - 课程官网：https://themodernsoftware.dev
+- 提示工程：[Prompting Guide 中文](https://www.promptingguide.ai/zh)
+- 扩展教程：[动手学大模型 Dive into LLMs](https://github.com/Lordog/dive-into-llms/tree/main)
