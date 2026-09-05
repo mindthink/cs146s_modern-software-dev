@@ -28,6 +28,7 @@ PIPFILE.lock
 # Environment variables
 .env
 .venv
+.venv-semgrep
 env/
 venv/
 ENV/
