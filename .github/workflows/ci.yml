@@ -1,0 +1,95 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  POETRY_VIRTUALENVS_CREATE: "true"
+  POETRY_VIRTUALENVS_IN_PROJECT: "true"
+
+jobs:
+  lint:
+    name: Lint (black + ruff)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: poetry
+
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
+
+      - name: black --check
+        run: poetry run black --check assignments/week4 assignments/week6
+
+      - name: ruff check
+        run: poetry run ruff check assignments/week4 assignments/week6
+
+  test-week4:
+    name: Test week4
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: poetry
+
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
+
+      - name: pytest week4
+        working-directory: assignments/week4
+        env:
+          PYTHONPATH: .
+        run: poetry run pytest -q backend/tests
+
+  test-week6:
+    name: Test week6
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Poetry
+        run: pipx install poetry
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: poetry
+
+      - name: Install dependencies
+        run: poetry install --no-interaction --no-root
+
+      - name: pytest week6
+        working-directory: assignments/week6
+        env:
+          PYTHONPATH: .
+        run: poetry run pytest -q backend/tests
+
+  semgrep-week6:
+    name: Semgrep week6
+    runs-on: ubuntu-latest
+    container:
+      image: semgrep/semgrep
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan assignments/week6
+        run: semgrep scan --config auto --error assignments/week6

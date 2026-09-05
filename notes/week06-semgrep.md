@@ -2,6 +2,10 @@
 
 作业目录：[`assignments/week6`](../assignments/week6/)
 
+使用过程（安装 / 扫描 / 复验）已写在：
+
+→ [`assignments/week6/docs/SEMGREP.md`](../assignments/week6/docs/SEMGREP.md)
+
 ## 做法
 
 用 **Semgrep CLI**（不开 AppSec 云）：
