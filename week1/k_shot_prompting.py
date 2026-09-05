@@ -7,7 +7,27 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = """You reverse an entire word one character at a time, from the last character to the first.
+Output ONLY the reversed word. No quotes, no spaces, no explanation.
+
+Few-shot examples:
+input: cat
+output: tac
+
+input: http
+output: ptth
+
+input: status
+output: sutats
+
+input: httpxyz
+output: zyxptth
+
+input: httpstatus
+letters from end to start: s u t a t s p t t h
+output: sutatsptth
+"""
+
 
 USER_PROMPT = """
 Reverse the order of letters in the following word. Only output the reversed word, no other text:
