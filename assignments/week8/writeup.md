@@ -1,24 +1,19 @@
 # Week 8 Write-up
-Tip: To preview this markdown file
-- On Mac, press `Command (⌘) + Shift + V`
-- On Windows/Linux, press `Ctrl + Shift + V`
-
-## Instructions
-
-Fill out all of the `TODO`s in this file.
 
 ## Submission Details
 
-Name: **TODO** \
-SUNet ID: **TODO** \
-Citations: **TODO**
+Name: **self-study (not enrolled)** \
+SUNet ID: **N/A** \
+Citations: FastAPI / Flask / SQLAlchemy docs; course week8 assignment scope
 
-This assignment took me about **TODO** hours to do.
+This assignment took me about **2** hours to do (self-study: **two** stacks — A + C; Bolt/version B skipped).
 
 
 ## App Concept
 ```
-TODO: Provide a brief, high-level overview of your app, highlighting its main features. This overview should be the same across all three app versions.
+A minimal Notes app: create / list / edit / delete notes with persistent
+SQLite storage, basic validation, and a simple browser UI. Same product,
+two backends for stack comparison (self-study; no third Bolt version).
 ```
 
 
@@ -26,58 +21,60 @@ TODO: Provide a brief, high-level overview of your app, highlighting its main fe
 ```
 APP DETAILS:
 ===============
-Folder name: TODO
-AI app generation platform: TODO
-Tech Stack: TODO
-Persistence: TODO
-Frameworks/Libraries Used: TODO
-(Optional but recommended) Screenshots of core flows: TODO
+Folder name: fastapi-notes
+AI app generation platform: none (hand-written with Cursor)
+Tech Stack: FastAPI + SQLAlchemy + SQLite + vanilla JS
+Persistence: SQLite file data/app.db
+Frameworks/Libraries Used: fastapi, uvicorn, sqlalchemy, pydantic
+Screenshots: N/A — run README and open http://127.0.0.1:8008
 
 REFLECTIONS:
 ===============
-a. Issues encountered per stack and how you resolved them: TODO
+a. Issues: keeping frontend paths (/static) aligned with FastAPI StaticFiles;
+   solved by mounting frontend/ and returning index.html from /.
 
-b. Prompting (e.g. what required additional guidance; what worked poorly/wel): TODO
+b. Prompting: asked Cursor for a compact single-file API + shared CRUD UI;
+   worked well; little iteration needed.
 
-c. Approximate time-to-first-run and time-to-feature metrics: TODO
+c. Time-to-first-run: ~10–15 min including README; feature-complete CRUD
+   in one pass.
 ```
 
 ## Version #2 Description
 ```
 APP DETAILS:
 ===============
-Folder name: TODO
-AI app generation platform: TODO
-Tech Stack: TODO
-Persistence: TODO
-Frameworks/Libraries Used: TODO
-(Optional but recommended) Screenshots of core flows: TODO
+Folder name: flask-notes
+AI app generation platform: none (hand-written with Cursor)
+Tech Stack: Flask (Python non-JS backend) + sqlite3 + vanilla JS
+Persistence: SQLite file data/app.db
+Frameworks/Libraries Used: flask, stdlib sqlite3
+Screenshots: N/A — run README and open http://127.0.0.1:8009
 
 REFLECTIONS:
 ===============
-a. Issues encountered per stack and how you resolved them: TODO
+a. Issues: manual JSON validation vs Pydantic — more boilerplate but clearer
+   for learning; used bound SQL parameters from the start (week6 lesson).
 
-b. Prompting (e.g. what required additional guidance; what worked poorly/wel): TODO
+b. Prompting: reuse same API shape and UI as FastAPI version for fair
+   comparison; accent color changed so versions are visually distinct.
 
-c. Approximate time-to-first-run and time-to-feature metrics: TODO
+c. Time-to-first-run: ~15–20 min including venv + requirements.txt;
+   API parity with Version A by design.
 ```
 
 ## Version #3 Description
 ```
 APP DETAILS:
 ===============
-Folder name: TODO
-AI app generation platform: TODO
-Tech Stack: TODO
-Persistence: TODO
-Frameworks/Libraries Used: TODO
-(Optional but recommended) Screenshots of core flows: TODO
+Folder name: (skipped — self-study)
+AI app generation platform: bolt.new not used
+Tech Stack: N/A
+Persistence: N/A
+Frameworks/Libraries Used: N/A
 
 REFLECTIONS:
 ===============
-a. Issues encountered per stack and how you resolved them: TODO
-
-b. Prompting (e.g. what required additional guidance; what worked poorly/wel): TODO
-
-c. Approximate time-to-first-run and time-to-feature metrics: TODO
+a–c. Self-study scope was Versions A + C only (FastAPI vs Flask).
+     Full course requires a third stack + Bolt; deferred.
 ```

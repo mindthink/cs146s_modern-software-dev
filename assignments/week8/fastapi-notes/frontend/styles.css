@@ -1,0 +1,58 @@
+:root {
+  --bg: #f6f4ef;
+  --ink: #1c1917;
+  --card: #fffdf8;
+  --line: #e7e0d5;
+  --accent: #0f766e;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, #dbeafe 0, transparent 40%),
+    var(--bg);
+  color: var(--ink);
+}
+main {
+  max-width: 720px;
+  margin: 2.5rem auto;
+  padding: 0 1rem 3rem;
+}
+.badge {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+h1 { margin: 0 0 1rem; font-size: 2rem; }
+form, li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+form { display: grid; gap: 0.6rem; }
+input, textarea, button {
+  font: inherit;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+button {
+  background: var(--accent);
+  color: white;
+  border-color: transparent;
+  cursor: pointer;
+  width: fit-content;
+}
+li button {
+  margin-top: 0.6rem;
+  margin-right: 0.4rem;
+  background: #292524;
+}
+ul { list-style: none; padding: 0; margin: 0; }
+li strong { display: block; margin-bottom: 0.35rem; }
